@@ -21,27 +21,14 @@ body {
     height: 100%;
 }
 
-.logo {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    height: fit-content;
-}
-
-.nav {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    height: fit-content;
-}
-
+.logo,
+.nav,
 .options {
     display: flex;
     flex-direction: column;
     padding: 10px;
     height: fit-content;
 }
-
 
 .dashboard {
     display: grid;
@@ -54,8 +41,6 @@ body {
 }
 
 .logo {
-    align-items: center;
-    text-align: center;
     font-family: LogoFont;
     font-size: 1.5rem;
 }
@@ -64,10 +49,13 @@ body {
     margin-bottom: 0;
 }
 
+.logo,
 .nav,
 .options {
     gap: 5px;
     padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .nav > a,
