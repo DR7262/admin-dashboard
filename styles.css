@@ -62,6 +62,18 @@ body {
     margin-bottom: 0;
 }
 
+.logo-icon,
+.icon {
+    width: 35px;
+    height: 35px;
+}
+
+.icon {
+    position: absolute;
+    scale: 50%;
+    fill: white;
+}
+
 .logo,
 .nav,
 .options {
