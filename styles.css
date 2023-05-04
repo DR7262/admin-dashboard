@@ -21,6 +21,16 @@ body {
     height: 100%;
 }
 
+.dashboard {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 4fr;
+    gap: 30px;
+    height: 100svh;
+    background-color: rgb(26,146,212);
+    align-items: start;
+    color: white;
+}
+
 .logo,
 .nav,
 .options {
@@ -28,16 +38,19 @@ body {
     flex-direction: column;
     padding: 10px;
     height: fit-content;
+    position: relative;
 }
 
-.dashboard {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 4fr;
-    gap: 20px;
-    height: 100svh;
-    background-color: rgb(26,146,212);
-    align-items: start;
-    color: white;
+.logo > p,
+.nav > a,
+.options > a {
+    margin-left: 40px;
+}
+
+.logo-icon {
+    position: absolute;
+    top: 1.50rem;
+    fill: white;
 }
 
 .logo {
@@ -52,7 +65,7 @@ body {
 .logo,
 .nav,
 .options {
-    gap: 5px;
+    gap: 12px;
     padding: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -62,6 +75,8 @@ body {
 .options > a {
     text-decoration: none;
     color: white;
+    font-size: .9rem;
+    font-weight: 600;
 }
 
 .main {
