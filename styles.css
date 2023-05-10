@@ -191,6 +191,33 @@ body {
 
 .greeting {
     grid-area: greeting;
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.profile-icon {
+    grid-row: 1 / span 2;
+    height: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.message {
+    font-size: .8rem;
+    grid-column: 2 / 3;
+}
+
+.userDisplay {
+    margin: 1px;
+    grid-column: 2 / 3;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.message,
+.userDisplay {
+    margin: 0;
 }
 
 .actions {
