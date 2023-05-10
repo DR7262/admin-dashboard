@@ -35,28 +35,6 @@ body {
     align-items: start;
     color: white;
     z-index: 2;
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
-}
-
-.dash-item {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px
-}
-
-.dash-item > a {
-    text-decoration: none;
-    color: white;
-    font-size: .9rem;
-    font-weight: 600;
-}
-
-.dash-icon {
-    height: 1.2rem;
-    width: 1.2rem;
-    fill: white;
 }
 
 .logo,
@@ -69,20 +47,25 @@ body {
     position: relative;
 }
 
+.logo > p,
+.nav > a,
+.options > a {
+    margin-left: 40px;
+}
+
 .logo-icon {
-    height: 1.5rem;
-    width: 1.5rem;
+    position: absolute;
+    top: 1.50rem;
     fill: white;
 }
 
 .logo {
     font-family: LogoFont;
     font-size: 1.5rem;
-    padding-left: .2rem;
 }
 
-.logo > .dash-item {
-    gap: .6rem;
+.logo > p {
+    margin-bottom: 0;
 }
 
 .logo-icon,
@@ -98,10 +81,27 @@ body {
     height: 20px;
 }
 
+.icon {
+    position: absolute;
+    scale: 50%;
+    fill: white;
+}
+
 .logo,
 .nav,
 .options {
     gap: 12px;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.nav > a,
+.options > a {
+    text-decoration: none;
+    color: white;
+    font-size: .9rem;
+    font-weight: 600;
 }
 
 .main {
@@ -179,6 +179,36 @@ body {
     justify-content: end;
     align-items: center;
     gap: 1rem;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-areas: 
+    "greeting actions";
+    align-items: center;
+    justify-content: space-between;
+}
+
+.greeting {
+    grid-area: greeting;
+}
+
+.actions {
+    display: grid;
+    grid-area: actions;
+    grid-template-columns: repeat(3, minmax(50px, 80px));
+    justify-content: end;
+    gap: 1.5rem;
+}
+
+.action {
+    border: none;
+    background-color: var(--main-color);
+    font-size: .8rem;
+    font-weight: 550;
+    color: white;
+    border-radius: 36px;
+    height: 30px;
 }
 
 .content {
