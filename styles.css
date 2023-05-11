@@ -7,6 +7,7 @@
     --main-color: rgb(26,146,212);
     --secondary-color: rgb(226,232,240);
     --accent-color: rgb(240,180,41);
+    --subtext-color: rgb(86, 86, 86);
 }
 
 html {
@@ -250,6 +251,7 @@ body {
 
 .section-title {
     margin: 0;
+    font-weight: 500;
 }
 
 .projects {
@@ -270,7 +272,7 @@ body {
 }
 
 .card,
-.news div {
+.news > div {
     min-height: 200px;
     border-radius: 6px;
     background-color: white;
@@ -292,10 +294,6 @@ body {
     gap: 20px;
 }
 
-.card-icon {
-
-}
-
 .project-title {
     font-weight: 600;
     margin: 0;
@@ -306,8 +304,31 @@ body {
     font-weight: 300;
     margin: 0px;
     margin-top: 2px;
+    color: var(--subtext-color);
 }
 
 .news {
     display: grid;
+}
+
+.announcement {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: .65rem;
+    font-weight: 400;
+    color:var(--subtext-color);
+}
+
+.announcement p {
+    margin: 0;
+    font-size: .8rem;
+    font-weight: 600;
+    color: black;
+}
+
+.divider {
+    color: var(--subtext-color);
+    opacity: 50%;
 }
