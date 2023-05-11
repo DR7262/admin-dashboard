@@ -248,16 +248,20 @@ body {
     overflow: scroll;
 }
 
+.section-title {
+    margin: 0;
+}
+
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    overflow: scroll;
 }
 
 .projects,
 .news {
     gap: 15px;
     padding: 4px;
+    overflow: scroll;
 }
 
 .card,
