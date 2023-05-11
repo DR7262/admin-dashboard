@@ -311,6 +311,12 @@ body {
     display: grid;
 }
 
+.announcements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .announcement {
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -329,6 +335,7 @@ body {
 }
 
 .divider {
+    width: 100%;
     color: var(--subtext-color);
     opacity: 50%;
 }
