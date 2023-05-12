@@ -183,6 +183,11 @@ body {
     gap: 1rem;
 }
 
+.user-icon,
+.profile-icon {
+    fill: var(--accent-color);
+}
+
 .header-bottom {
     display: grid;
     grid-template-areas: 
@@ -378,7 +383,7 @@ body {
 }
 
 .crown {
-    fill: goldenrod;
+    fill: crimson;
 }
 
 .toxic {
